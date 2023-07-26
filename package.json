@@ -1,0 +1,22 @@
+{
+  "name": "calculator-js",
+  "version": "1.0.0",
+  "description": "Simple calculator demo in plain javascript",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack  --config webpack.prod.config.js",
+    "dev": "webpack-dev-server --config webpack.dev.config.js --hot"    
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^6.8.1"
+  },
+  "devDependencies": {
+    "sass-loader": "^13.3.2",
+    "webpack": "^5.88.2",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
