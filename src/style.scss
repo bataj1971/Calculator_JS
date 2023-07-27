@@ -1,0 +1,125 @@
+/* 
+    Created on : 2017.06.04., 20:01:51
+    Author     : JĂłzsef
+*/
+
+body {
+  font-family: arial;
+  font-size: 20px;
+  user-select: none;
+}
+
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#container {
+    display: grid;
+    align-items: center;
+
+}
+
+
+#box {
+  background-color: #efede0;
+  color: #333;
+  border: solid 2px #dfddd0;
+  border-radius: 5px;
+  width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+
+  padding: 6px;
+}
+
+#buttons {
+  border: solid 1px #ddd;
+  border-radius: 3px;
+  display: inline-block;
+  width: 285px;
+  text-align: center;
+
+  & .button {
+    background-color: #efeac9;
+    color: #333;
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    width: 60px;
+    height: 40px;
+    margin: 5px;
+    font-size: 34px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &.number {
+      text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    &.sign {
+      background-color: #9a9099;
+      color: #efeac9;
+      text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.3);
+    }
+
+    &.red {
+      background-color: #944;
+    }
+
+    &.blue {
+      background-color: #568;
+    }
+
+    &.pushed {
+      background-color: #777;
+      box-shadow: none;
+    }
+  }
+}
+
+@font-face {
+  font-family: "digital-clock-font";
+  src: url("font/digital-7.ttf");
+}
+
+#screen {
+  display: inline-block;
+  background-color: #d8d4d0;
+  color: #333;
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  width: 100%;
+  height: 50px;
+
+  font-family: digital-clock-font;
+
+  font-size: 40px;
+  text-align: right;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#screentext {
+  & div {
+    width: 20px;
+    display: inline-block;
+  }
+}
+#memory {
+  float: left;
+  font-size: 20px;
+}
+
+#boxtitle {
+  padding: 3px;
+  font-size: 12px;
+  color: #333;
+}
