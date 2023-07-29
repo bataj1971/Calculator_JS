@@ -1,4 +1,4 @@
-import './style.scss';
+import './styles/main.scss';
 
 import { CalculatorFace } from './calculator/CalculatorFace';
 import { CalculatorEngine } from './calculator/CalculatorEngine';
